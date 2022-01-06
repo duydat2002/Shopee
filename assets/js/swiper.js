@@ -2,6 +2,7 @@
 const banner = new Swiper('.home__banner-slider', {
     // Optional parameters
     allowTouchMove: false,
+    speed: 500,
     direction: 'horizontal',
     loop: true,
     autoplay: {
@@ -26,6 +27,7 @@ const banner = new Swiper('.home__banner-slider', {
 const category = new Swiper('.category-slider .swiper', {
     // Optional parameters
     direction: 'horizontal',
+    speed: 500,
     slidesPerView: 10,
     slidesPerGroup: 10,
     allowTouchMove: false,
@@ -40,6 +42,7 @@ const category = new Swiper('.category-slider .swiper', {
 const mailBanner = new Swiper('.mail__banner-slider', {
     // Optional parameters
     allowTouchMove: false,
+    speed: 500,
     direction: 'horizontal',
     loop: true,
     autoplay: {
@@ -63,6 +66,7 @@ const mailBanner = new Swiper('.mail__banner-slider', {
 const mailProduct = new Swiper('.mail__products-slider', {
     // Optional parameters
     direction: 'horizontal',
+    speed: 400,
     slidesPerView: 4,
     slidesPerGroup: 4,
     allowTouchMove: false,
@@ -77,6 +81,7 @@ const mailProduct = new Swiper('.mail__products-slider', {
 const topSearch = new Swiper('.top-search-slider .swiper', {
     // Optional parameters
     direction: 'horizontal',
+    speed: 600,
     slidesPerView: 3,
     slidesPerGroup: 3,
     allowTouchMove: false,
