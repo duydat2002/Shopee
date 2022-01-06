@@ -940,7 +940,7 @@ button {
     min-height: 0;
 }
 
-.home__banner-small-wrapper .home__banner-link:last-child {
+.home__banner-small-wrapper .home__banner__link:last-child {
     margin-top: 5px;
 }
 
