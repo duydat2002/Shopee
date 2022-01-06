@@ -1,5 +1,5 @@
 // ===== BANNER SLIDER =====
-const banner = new Swiper('.banner-slider .swiper-container', {
+const banner = new Swiper('.home__banner-slider', {
     // Optional parameters
     allowTouchMove: false,
     direction: 'horizontal',
@@ -9,21 +9,21 @@ const banner = new Swiper('.banner-slider .swiper-container', {
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
     },
-    // If we need pagination
+    // // If we need pagination
     pagination: {
-        el: '.banner-slider .swiper-pagination',
+        el: '.home__banner-slider .swiper-pagination',
         clickable: true,
     },
   
-    // Navigation arrows
+    // // Navigation arrows
     navigation: {
-        nextEl: '.banner-slider .navigation-next',
-        prevEl: '.banner-slider .navigation-prev',
+        nextEl: '.home__banner-slider .navigation-next',
+        prevEl: '.home__banner-slider .navigation-prev',
     },
 });
 
 // ===== CATEGORY SLIDER =====
-const category = new Swiper('.category-slider .swiper-container', {
+const category = new Swiper('.category-slider .swiper', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 10,
@@ -37,10 +37,11 @@ const category = new Swiper('.category-slider .swiper-container', {
 });
 
 // ===== SHOPEE MAIL SlIDER =====
-const mailBanner = new Swiper('.mail-banner-slider .swiper-container', {
+const mailBanner = new Swiper('.mail__banner-slider', {
     // Optional parameters
     allowTouchMove: false,
     direction: 'horizontal',
+    loop: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
@@ -48,13 +49,18 @@ const mailBanner = new Swiper('.mail-banner-slider .swiper-container', {
     },
     // If we need pagination
     pagination: {
-        el: '.mail-banner-slider .swiper-pagination',
+        el: '.mail__banner-slider .swiper-pagination',
         clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.mail__banner-slider .navigation-next',
+        prevEl: '.mail__banner-slider .navigation-prev',
     },
 });
 
 // Mail Product
-const mailProduct = new Swiper('.mail-product-slider .swiper-container', {
+const mailProduct = new Swiper('.mail__products-slider', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 4,
@@ -62,13 +68,13 @@ const mailProduct = new Swiper('.mail-product-slider .swiper-container', {
     allowTouchMove: false,
     // Navigation arrows
     navigation: {
-        nextEl: '.mail-product-slider .navigation-next',
-        prevEl: '.mail-product-slider .navigation-prev',
+        nextEl: '.mail__products-wrapper .navigation-next',
+        prevEl: '.mail__products-wrapper .navigation-prev',
     },
 });
 
 // ===== TOP SEARCH SLIDER =====
-const topSearch = new Swiper('.top-search-slider .swiper-container', {
+const topSearch = new Swiper('.top-search-slider .swiper', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 3,
